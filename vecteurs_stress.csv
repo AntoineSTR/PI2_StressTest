@@ -1,0 +1,8 @@
+Scenario Name,Type,Target Column,Taux Shock (%),Spread Shock (bps),Volume Shock (%),Durée Shock (%)
+Base,Base,,0,0,0,0
+Stress Taux +200bps,Taux,TLA,200,0,0,0
+Stress Spread +150bps,Spread,Crédit entreprise,0,150,0,0
+Stress Volume -15%,Volume,Crédit immobilier,0,0,-15,0
+Stress Duration -20%,Duration,Crédit consommation,0,0,0,-20
+Adverse EBA 2023,Adverse,ALL,300,200,-10,-15
+Severe EBA,Severe,ALL,500,400,-20,-30
