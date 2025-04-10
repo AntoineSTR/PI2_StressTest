@@ -42,7 +42,7 @@ Etape :
 
 ```bash
 git clone https://github.com/AntoineSTR/PI2_StressTest.git
-cd ton-repo
+cd PI2_StressTest
 pip install -r requirements.txt
 streamlit run app.py
 ```
