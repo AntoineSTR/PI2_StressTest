@@ -41,7 +41,7 @@ Etape :
 ### 1. Cloner le dépôt
 
 ```bash
-git clone https://github.com/TON-UTILISATEUR/ton-repo.git
+git clone https://github.com/AntoineSTR/PI2_StressTest.git
 cd ton-repo
 pip install -r requirements.txt
 streamlit run app.py
