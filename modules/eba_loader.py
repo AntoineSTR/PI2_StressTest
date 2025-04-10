@@ -1,4 +1,25 @@
 import pandas as pd
+import pycountry
+
+def get_eba_map_data(csv_path):
+    """
+    Prépare les données de scénarios EBA pour affichage sur carte.
+
+    Returns:
+    - df : DataFrame avec colonne 'iso_alpha' (code pays 3 lettres) + intensité de choc
+    """
+    df = pd.read_csv(csv_path)
+    df["iso_alpha"] = df["Zone"].apply(lambda x: get_country_code(x))
+    return df
+
+def get_country_code(name):
+    """
+    Convertit le nom d’un pays (France, Germany, etc.) en code ISO alpha-3 pour Plotly.
+    """
+    try:
+        return pycountry.countries.lookup(name).alpha_3
+    except:
+        return None
 
 def load_eba_scenarios(csv_path):
     """
