@@ -1,5 +1,9 @@
 # 💼 ALM Stress Testing App – Projet PI² ESILV
 
+[![Streamlit App](https://img.shields.io/badge/🚀%20Streamlit-Live%20App-orange?logo=streamlit)](https://cryptodashboard-3bmggrrnlvk2tyyqpya3ny.streamlit.app)
+[![GitHub Stars](https://img.shields.io/github/stars/AntoineSTR/PI2_StressTest?style=social)](https://github.com/AntoineSTR/PI2_StressTest)
+
+
 Bienvenue sur l'application de **Stress Testing ALM** bancaire, développée dans le cadre du projet PI² de 4ᵉ année à l'ESILV (Majeure Ingénierie Financière).
 
 L’objectif est de permettre une **analyse professionnelle** de scénarios macroéconomiques (type EBA/BCE), appliqués aux postes du bilan d'une banque, avec des résultats visuels, pédagogiques et exploitables.
@@ -47,6 +51,8 @@ L’interface s’ouvrira dans votre navigateur, prête à l’emploi.
 ---
 
 ## 📁 Arborescence du projet
+
+```
 .
 ├── app.py                        # Application principale
 ├── requirements.txt             # Dépendances Python
@@ -59,6 +65,7 @@ L’interface s’ouvrira dans votre navigateur, prête à l’emploi.
 │   ├── stress_engine.py         # Application des chocs
 │   ├── ui_utils.py              # UI et nettoyage
 │   └── eba_loader.py            # Chargement des scénarios EBA
+```
 
 ---
 
