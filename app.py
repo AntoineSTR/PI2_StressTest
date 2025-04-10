@@ -27,6 +27,19 @@ st.sidebar.header("📂 Données à importer")
 data_file = st.sidebar.file_uploader("1. Données ALM - Base.xlsx", type=["xlsx"])
 stress_file = st.sidebar.file_uploader("2. Vecteurs de stress - vecteurs_stress.csv", type=["csv"])
 
+# === Téléchargement des fichiers d'exemple si l'utilisateur n'a pas les siens
+st.sidebar.markdown("📥 **Fichiers d’exemple à télécharger**")
+
+try:
+    with open("Base.xlsx", "rb") as f_base:
+        st.sidebar.download_button("⬇️ Télécharger Base.xlsx", f_base, file_name="Base.xlsx")
+
+    with open("vecteurs_stress.csv", "rb") as f_vec:
+        st.sidebar.download_button("⬇️ Télécharger vecteurs_stress.csv", f_vec, file_name="vecteurs_stress.csv")
+except FileNotFoundError:
+    st.sidebar.warning("❗ Les fichiers d'exemple sont introuvables. Vérifiez le dossier 'sample_data/'.")
+
+
 # === Si les deux fichiers sont uploadés ===
 if data_file and stress_file:
     df, numeric_cols, dim3_col, scenario_col = load_and_clean_data(data_file)
