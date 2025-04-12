@@ -1,6 +1,6 @@
 # 💼 ALM Stress Testing App – Projet PI² ESILV
 
-[![Streamlit App](https://img.shields.io/badge/🚀%20Streamlit-Live%20App-orange?logo=streamlit)](https://cryptodashboard-3bmggrrnlvk2tyyqpya3ny.streamlit.app)
+[![Streamlit App](https://img.shields.io/badge/🚀%20Streamlit-Live%20App-orange?logo=streamlit)](https://projetpi2.streamlit.app)
 [![GitHub Stars](https://img.shields.io/github/stars/AntoineSTR/PI2_StressTest?style=social)](https://github.com/AntoineSTR/PI2_StressTest)
 
 
@@ -12,7 +12,7 @@ L’objectif est de permettre une **analyse professionnelle** de scénarios macr
 
 ## 🚀 Démo en ligne 
 
-🌍 [Lien vers l'application en ligne](https://cryptodashboard-3bmggrrnlvk2tyyqpya3ny.streamlit.app/)
+🌍 [Lien vers l'application en ligne](https://projetpi2.streamlit.app)
 
 Etape : 
 - Télécharger les fichiers disponibles dans la barre de gauche
